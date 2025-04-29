@@ -5,7 +5,9 @@ const Hero = () => {
         <>
         <Container>
             <Row>
-                <Col sm></Col>
+                <Col sm={12}>
+                
+                </Col>
             </Row>
 
         </Container>

@@ -21,6 +21,7 @@
     font-size: 16px;
     color: #495057; /* Darker color for the text */
     transition: color 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer;
   }
   
   .nav-item:hover {
