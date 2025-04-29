@@ -1,24 +1,23 @@
 import { Container, Row, Col } from "react-bootstrap";
 import SearchInput from "./SearchInput";
+import "./components-css/nav.css";
 
 const Nav = () => {
   return (
     <Container fluid>
-      <Row className="align-items-center py-2">
-        <Col xs="auto">
-          <div className="fw-bold h5 mb-0">My Store</div>
-        </Col>
+      <Row>
+        <Col className="d-flex align-items-center justify-content-between py-2 nav-container">
+          <div className="fw-bold h5 mb-0 nav-logo">My Store</div>
 
-        <Col xs="auto">
-          <ul className="d-flex list-unstyled mb-0 gap-3">
-            <li>Menu</li>
-            <li>Contatti</li>
-            <li>Accedi</li>
+          <ul className="d-flex list-unstyled mb-0 gap-3 nav-menu">
+            <li className="nav-item">Menu</li>
+            <li className="nav-item">Contatti</li>
+            <li className="nav-item">Accedi</li>
           </ul>
-        </Col>
 
-        <Col xs="auto">
-          <SearchInput />
+          <div className="nav-search">
+            <SearchInput />
+          </div>
         </Col>
       </Row>
     </Container>
